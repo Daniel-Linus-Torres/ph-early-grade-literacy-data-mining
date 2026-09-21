@@ -53,25 +53,42 @@ Files were joined on School ID (or standardized school name where needed). This 
 - **Two natural performance clusters** emerged from Grade 1–3 reading trajectories (best silhouette score at k = 2).
 - **Limited predictive power from school profile alone.** Logistic Regression accuracy ranged from about **56 % to 68 %**, suggesting demographic and linguistic attributes do not fully determine school-level outcomes. Implementation quality and region also matter.
 
-<!-- Add exported figures here, e.g.:
-![Correlation heatmap](figures/correlation_grade3.png)
-![Cluster dendrogram](figures/dendrogram.png)
--->
-
 ## Repository Structure
 ```
 ph-early-grade-literacy-data-mining/
-├── data/
-│   └── README.md                                  # Dataset metadata and data dictionary
-├── docs/
-│   └── Ph-Literacy-Gap-Research-Paper.pdf         # Full research paper (PDF)
-├── notebooks/
-│   ├── 01_exploratory_analysis_and_clustering.ipynb # Preprocessing, correlation & hierarchical clustering
-│   └── 02_multiclass_logistic_regression.ipynb    # Predictive modeling pipeline
-├── .gitignore                                     # Git ignore configuration
-├── LICENSE                                        # Project open-source license
-├── README.md                                      # Project overview & main documentation
-└── requirements.txt                               # Python dependencies
+├── data/                   # Dataset and documentation
+│   ├── CRLA_Dataset.csv
+│   └── README.md
+│
+├── docs/                   # Research documentation
+│   └── Ph-Literacy-Gap-Research-Paper.pdf
+│
+├── figures/                # Visualizations and analysis outputs
+│   ├── 01_schools_per_region.png
+│   ├── 02_schools_by_mother_tongue.png
+│   ├── 03_classification_pie.png
+│   ├── 04_region_by_classification_stacked.png
+│   ├── 05_proficiency_by_region.png
+│   ├── 06_proficiency_by_classification.png
+│   ├── 07_national_proficiency_donut.png
+│   ├── 08_I1_I2_I3_correlation_heatmap.png
+│   ├── 09_I1_I2_I3_scatterplots.png
+│   ├── 10_pca_scree_plot.png
+│   ├── 11_pca_loadings.png
+│   ├── 12_pca_scatter_by_region.png
+│   ├── 13_hierarchical_clusters.png
+│   ├── cluster_composition_*.png
+│   ├── correlations_by_*.png
+│   └── crla_analysis_output.xlsx
+│
+├── notebooks/              # Analysis notebooks
+│   ├── 01_exploratory_analysis_and_clustering.ipynb
+│   └── 02_multiclass_logistic_regression.ipynb
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ## Getting Started
