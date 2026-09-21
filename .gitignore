@@ -10,10 +10,6 @@ venv/
 *.key
 *.pem
 
-# Data (keep raw data out of Git; document sources in data/README.md instead)
-data/*
-!data/README.md
-
 # OS / editor
 .DS_Store
 Thumbs.db
